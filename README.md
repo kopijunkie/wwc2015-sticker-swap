@@ -1,4 +1,4 @@
-# kopijunkie.net
+# WWC2015 Panini Stickers Swap Inventory
 
 > Code repository for my personal WWC2015 Panini stickers swap inventory
 
