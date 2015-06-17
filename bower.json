@@ -1,5 +1,6 @@
 {
-  "name": "WWC2015 Sticker Swap Inventory",
+  "name": "StickerSwapInventory",
+  "description": "WWC2015 Sticker Swap Inventory",
   "version": "0.0.0",
   "dependencies": {
     "jquery": "~2.1.0",

@@ -1,5 +1,10 @@
 {
-  "name": "WWC2015 Sticker Swap Inventory",
+  "name": "StickerSwapInventory",
+  "description": "WWC2015 Sticker Swap Inventory",
+  "author": {
+    "name": "KopiJunkie"
+  },
+  "homepage": "http://kopijunkie.net",
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
