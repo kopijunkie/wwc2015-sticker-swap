@@ -77,9 +77,9 @@ app.get("/api/needs", function(request, response) {
 app.post("/api/needs", function(request, response) {
     var need = new NeedStickerModel({
         stickerId: request.body.id,
-        found: request.body.found,
-        swapped: request.body.swapped,
-        swappedWith: request.body.swappedWith
+        found: request.body.found || false,
+        swapped: request.body.swapped || false,
+        swappedWith: request.body.swappedWith || ""
     });
 
     return need.save(function(error) {
@@ -107,7 +107,7 @@ app.get("/api/spares", function(request, response) {
 app.post("/api/spares", function(request, response) {
     var spare = new SpareStickerModel({
         stickerId: request.body.id,
-        reserved: request.body.found || false,
+        reserved: request.body.reserved || false,
         swapped: request.body.swapped || false,
         swappedWith: request.body.swappedWith || ""
     });
