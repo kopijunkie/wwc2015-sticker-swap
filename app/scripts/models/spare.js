@@ -19,9 +19,11 @@ StickerSwapInventory.Models = StickerSwapInventory.Models || {};
         },
 
         validate: function(attrs, options) {
+            console.log(attrs, options);
         },
 
         parse: function(response, options)  {
+            console.log(response, options);
             return response;
         }
     });
