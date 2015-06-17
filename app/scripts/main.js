@@ -7,7 +7,7 @@ window.StickerSwapInventory = {
     Routers: {},
     init: function () {
         "use strict";
-        console.log("Hello from Backbone!", this);
+
         var needs = [{
             id: 777,
             found: false,
@@ -26,13 +26,27 @@ window.StickerSwapInventory = {
         var needsList = new this.Views.NeedsListView({
             collection: stickersNeeded
         });
-        console.log(needsList);
-        $("#needs-region").append(needsList.render().el);
+        $("#needs-region").append(needsList.el);
 
-        // var sparesList = new this.Views.SparesListView({
-        //     collection: new this.Collections.SparesCollection()
-        // });
-        // $("#spares-region").append(sparesList.render().el);
+        var spares = [{
+            id: 123,
+            reserved: false,
+            swapped: false
+        },{
+            id: 456,
+            reserved: false,
+            swapped: false
+        },{
+            id: 789,
+            reserved: false,
+            swapped: false
+        }];
+        var stickersSpare = new this.Collections.SparesCollection(spares);
+        console.log(stickersSpare.toJSON());
+        var sparesList = new this.Views.SparesListView({
+            collection: stickersSpare
+        });
+        $("#spares-region").append(sparesList.el);
     }
 };
 

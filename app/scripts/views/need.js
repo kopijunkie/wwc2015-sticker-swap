@@ -17,7 +17,6 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         },
 
         render: function () {
-            console.log(this);
             this.$el.html(this.template(this.model.toJSON()));
             return this;
         }

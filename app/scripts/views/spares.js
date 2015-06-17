@@ -6,24 +6,28 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
     "use strict";
 
     StickerSwapInventory.Views.SparesListView = Backbone.View.extend({
-
         template: JST["app/scripts/templates/spares.ejs"],
-
-        tagName: "ul",
-
-        id: "",
-
-        className: "spares__list",
+        tagName: "section",
+        className: "spare-stickers",
 
         events: {},
 
         initialize: function () {
-            this.listenTo(this.model, "change", this.render);
+            this.render();
         },
 
         render: function () {
-            this.$el.html(this.template(this.model.toJSON()));
-            return this;
+            this.$el.append(this.template());
+            this.collection.each(function(sticker) {
+                this.renderStickersSpare(sticker);
+            }, this);
+        },
+
+        renderStickersSpare: function(sticker) {
+            var stickerSpareView = new StickerSwapInventory.Views.SpareStickerView({
+                model: sticker
+            });
+            this.$el.find("#spares__list").append(stickerSpareView.render().el);
         }
 
     });

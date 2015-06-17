@@ -7,8 +7,8 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
 
     StickerSwapInventory.Views.NeedsListView = Backbone.View.extend({
         template: JST["app/scripts/templates/needs.ejs"],
-        tagName: "ul",
-        className: "needs__list",
+        tagName: "section",
+        className: "stickers-needed",
 
         events: {},
 
@@ -17,8 +17,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         },
 
         render: function () {
-            // this.$el.html(this.template(this.model.toJSON()));
-            // return this;
+            this.$el.append(this.template());
             this.collection.each(function(sticker) {
                 this.renderStickerNeeded(sticker);
             }, this);
@@ -28,8 +27,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
             var stickerNeededView = new StickerSwapInventory.Views.NeedView({
                 model: sticker
             });
-            console.log(stickerNeededView);
-            this.$el.append(stickerNeededView.render().el);
+            this.$el.find("#needs__list").append(stickerNeededView.render().el);
         }
 
     });

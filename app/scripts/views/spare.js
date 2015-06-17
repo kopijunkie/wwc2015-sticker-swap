@@ -5,14 +5,9 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
 (function () {
     "use strict";
 
-    StickerSwapInventory.Views.SpareView = Backbone.View.extend({
-
+    StickerSwapInventory.Views.SpareStickerView = Backbone.View.extend({
         template: JST["app/scripts/templates/spare.ejs"],
-
         tagName: "li",
-
-        id: "",
-
         className: "spares__list-item",
 
         events: {},

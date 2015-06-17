@@ -1,2 +1,11 @@
-<h4>Sticker ID</h4>
-<p>Your content here.</p>
+<h3 class="h5">Sticker ID: <%= data.id %></h3>
+<div class="checkbox__container">
+    <input type="checkbox" id="reserved-swap" class="checkbox checked-icon"
+        <%= data.reserved ? 'checked="checked"' : '' %> />
+    <label for="reserved-swap" class="checkbox__label">Reserved</label>
+</div>
+<div class="checkbox__container">
+    <input type="checkbox" id="swapped" class="checkbox checked-icon"
+        <%= data.swapped ? 'checked="checked"' : '' %> />
+    <label for="swapped" class="checkbox__label">Swapped</label>
+</div>

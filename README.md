@@ -2,11 +2,10 @@
 
 > Code repository for my personal WWC2015 Panini stickers swap inventory
 
-<!-- [![Build Status](https://travis-ci.org/kopijunkie/kopijunkie.net.svg?branch=master)](https://travis-ci.org/kopijunkie/kopijunkie.net) -->
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## TODO
  * MongoDB for data storage
  * RESTful service to GET, UPDATE data
- * Data model
- * Template for data display view
- * Basically, everything still!
+ * Style it up a bit
+ * Mostly, everything still!
