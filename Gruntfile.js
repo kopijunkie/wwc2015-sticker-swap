@@ -51,7 +51,7 @@ module.exports = function (grunt) {
             },
             jst: {
                 files: [
-                    "<%= yeoman.app %>/scripts/templates/*.html"
+                    "<%= yeoman.app %>/scripts/templates/*.ejs"
                 ],
                 tasks: ["jst"]
             },
@@ -109,8 +109,8 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            dist: [".tmp", "<%= yeoman.dist %>/*.*"],
-            server: ".tmp"
+            dist: [".tmp/**/*", "<%= yeoman.dist %>/*.*"],
+            server: ".tmp/**/*"
         },
         jshint: {
             options: {
@@ -237,13 +237,13 @@ module.exports = function (grunt) {
         },
         jst: {
             options: {
-                processName: function(filepath) {
-                    return filepath.replace("src/js/", "").replace(".html", "");
+                templateSettings: {
+                    variable: "data"
                 }
             },
             compile: {
                 files: {
-                    ".tmp/scripts/templates.js": ["<%= yeoman.app %>/scripts/templates/*.html"]
+                    ".tmp/scripts/templates.js": ["<%= yeoman.app %>/scripts/templates/*.ejs"]
                 }
             }
         },

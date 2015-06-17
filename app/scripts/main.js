@@ -1,6 +1,5 @@
 /*global StickerSwapInventory, $*/
 
-
 window.StickerSwapInventory = {
     Models: {},
     Collections: {},
@@ -22,19 +21,13 @@ window.StickerSwapInventory = {
             found: false,
             swapped: false
         }];
-        var needsList = new this.Views.NeedsListView(needs);
+        var stickersNeeded = new this.Collections.NeedsCollection(needs);
+        console.log(stickersNeeded.toJSON());
+        var needsList = new this.Views.NeedsListView({
+            collection: stickersNeeded
+        });
         console.log(needsList);
-
-        var needThis = new this.Models.NeedStickerModel({
-            id: 777,
-            "found": false,
-            "swapped": false
-        });
-        console.log(needThis.toJSON());
-        var needSticker = new this.Views.NeedView({
-            model: needThis
-        });
-        $("#needs-region").append(needSticker.render().el);
+        $("#needs-region").append(needsList.render().el);
 
         // var sparesList = new this.Views.SparesListView({
         //     collection: new this.Collections.SparesCollection()

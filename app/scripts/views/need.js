@@ -6,13 +6,8 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
     "use strict";
 
     StickerSwapInventory.Views.NeedView = Backbone.View.extend({
-
-        template: JST["app/scripts/templates/need.html"],
-
+        template: JST["app/scripts/templates/need.ejs"],
         tagName: "li",
-
-        id: "",
-
         className: "needs__list-item",
 
         events: {},
@@ -22,6 +17,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         },
 
         render: function () {
+            console.log(this);
             this.$el.html(this.template(this.model.toJSON()));
             return this;
         }
