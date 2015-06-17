@@ -5,7 +5,9 @@
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## TODO
+ * Load in initial needs, spares lists from a CSV
  * MongoDB for data storage
  * RESTful service to GET, UPDATE data
  * Style it up a bit
+ * UI to add a need/spare sticker
  * Mostly, everything still!
