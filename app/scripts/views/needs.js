@@ -7,7 +7,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
 
     StickerSwapInventory.Views.NeedsListView = Backbone.View.extend({
 
-        template: JST["app/scripts/templates/needs.ejs"],
+        template: JST["app/scripts/templates/needs.html"],
 
         tagName: "ul",
 
