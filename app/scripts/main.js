@@ -9,15 +9,15 @@ window.StickerSwapInventory = {
         "use strict";
 
         var needs = [{
-            id: 777,
+            id: 2,
             found: false,
             swapped: false
         },{
-            id: 888,
+            id: 3,
             found: false,
             swapped: false
         },{
-            id: 999,
+            id: 4,
             found: false,
             swapped: false
         }];
@@ -29,15 +29,15 @@ window.StickerSwapInventory = {
         $("#needs-region").append(needsList.el);
 
         var spares = [{
-            id: 123,
+            id: 54,
             reserved: false,
             swapped: false
         },{
-            id: 456,
+            id: 339,
             reserved: false,
             swapped: false
         },{
-            id: 789,
+            id: 400,
             reserved: false,
             swapped: false
         }];

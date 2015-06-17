@@ -27,7 +27,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
             var stickerNeededView = new StickerSwapInventory.Views.NeedView({
                 model: sticker
             });
-            this.$el.find("#needs__list").append(stickerNeededView.render().el);
+            this.$el.find("#needs-list").append(stickerNeededView.render().el);
         }
 
     });

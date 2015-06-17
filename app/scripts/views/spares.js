@@ -27,7 +27,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
             var stickerSpareView = new StickerSwapInventory.Views.SpareStickerView({
                 model: sticker
             });
-            this.$el.find("#spares__list").append(stickerSpareView.render().el);
+            this.$el.find("#spares-list").append(stickerSpareView.render().el);
         }
 
     });
