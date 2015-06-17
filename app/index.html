@@ -18,35 +18,24 @@
 
         <div class="container">
             <div class="header">
-                <h3 class="text-muted">My WWC2015 Panini Sticker Swap Inventory</h3>
+                <h1 class="text-muted">KopiJunkie's WWC2015 Panini Sticker Swap Inventory</h1>
             </div>
 
-            <div class="row text-left">
-                <div class="col-md-offset-4">
-                    <h2>Now Try,</h2>
-                    <h4><b>yo backbone:router</b> &lt;router&gt;</h4>
-                    <h4><b>yo backbone:collection</b> &lt;collection&gt;</h4>
-                    <h4><b>yo backbone:model </b> &lt;model&gt;</h4>
-                    <h4><b>yo backbone:view </b> &lt;view&gt;</h4>
-                </div>
-            </div>
-
-            <div class="row marketing">
+            <div class="row">
                 <div class="col-lg-6">
-                    <h4>Spares List</h4>
+                    <h2>Needs List</h2>
+                    <div id="needs-region"></div>
                     <ul>
                         <li>456</li>
                         <li>789</li>
                     </ul>
-
                 </div>
                 <div class="col-lg-6">
-                    <h4>Needs List</h4>
+                    <h2>Spares List</h2>
+                    <div id="spares-region"></div>
                     <ul>
                         <li>123</li>
                     </ul>
-
-
                 </div>
             </div>
 
@@ -81,6 +70,14 @@
         <!-- build:js({.tmp,app}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/templates.js"></script>
+        <script src="scripts/collections/needs.js"></script>
+        <script src="scripts/models/need.js"></script>
+        <script src="scripts/collections/spares.js"></script>
+        <script src="scripts/models/spare.js"></script>
+        <script src="scripts/views/needs.js"></script>
+        <script src="scripts/views/need.js"></script>
+        <script src="scripts/views/spares.js"></script>
+        <script src="scripts/views/spare.js"></script>
         <!-- endbuild -->
 </body>
 </html>

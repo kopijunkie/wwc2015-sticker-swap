@@ -50,6 +50,11 @@ module.exports = function (grunt) {
                 ]
             },
             jst: {
+                options: {
+                    templateSettings: {
+                        variable: "data"
+                    }
+                },
                 files: [
                     "<%= yeoman.app %>/scripts/templates/*.ejs"
                 ],
@@ -133,28 +138,28 @@ module.exports = function (grunt) {
             }
         },
         sass: {
-          options: {
-            sourceMap: true,
-            includePaths: ["app/bower_components"]
+            options: {
+                sourceMap: true,
+                includePaths: ["app/bower_components"]
             },
-          dist: {
-            files: [{
-              expand: true,
-              cwd: "<%= yeoman.app %>/styles",
-              src: ["*.{scss,sass}"],
-              dest: ".tmp/styles",
-              ext: ".css"
-            }]
-          },
-          server: {
-            files: [{
-              expand: true,
-              cwd: "<%= yeoman.app %>/styles",
-              src: ["*.{scss,sass}"],
-              dest: ".tmp/styles",
-              ext: ".css"
-            }]
-          }
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: "<%= yeoman.app %>/styles",
+                    src: ["*.{scss,sass}"],
+                    dest: ".tmp/styles",
+                    ext: ".css"
+                }]
+            },
+            server: {
+                files: [{
+                    expand: true,
+                    cwd: "<%= yeoman.app %>/styles",
+                    src: ["*.{scss,sass}"],
+                    dest: ".tmp/styles",
+                    ext: ".css"
+                }]
+            }
         },
         // not enabled since usemin task does concat and uglify
         // check index.html to edit your build targets
@@ -237,6 +242,11 @@ module.exports = function (grunt) {
         },
         jst: {
             compile: {
+                options: {
+                    templateSettings: {
+                        variable: "data"
+                    }
+                },
                 files: {
                     ".tmp/scripts/templates.js": ["<%= yeoman.app %>/scripts/templates/*.ejs"]
                 }
