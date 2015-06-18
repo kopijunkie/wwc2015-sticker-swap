@@ -6,8 +6,7 @@
 
 ## TODO
  * Load in initial needs, spares lists (2 arrays of IDs)
- * MongoDB for data storage
- * RESTful service to GET, UPDATE data
+ * UI to add need/spare sticker(s) - comma separated string of IDs
  * Style it up a bit
- * UI to add a need/spare sticker
+ * Tests
  * Mostly, everything still!
