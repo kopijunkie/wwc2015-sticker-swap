@@ -1,29 +1,29 @@
 "use strict";
 
-// Module dependencies.
+// Module dependencies
 var applicationRoot = __dirname,
-    express = require("express"), // Web framework - HTTP server
-    bodyParser = require("body-parser"), // Parser for reading request body
-    path = require("path"), // Utilities for dealing with file paths
-    mongoose = require("mongoose"); // MongoDB integration
+    express = require("express"),           // Web framework - HTTP server (JS equivalent to Apache)
+    bodyParser = require("body-parser"),    // Parser for reading request body
+    path = require("path"),                 // Utilities for dealing with file paths
+    mongoose = require("mongoose");         // MongoDB integration
 
 // Create server
 var app = express();
 
 // Configure server
 app.configure( function() {
-    //Where to serve static content
+    // Where to serve static content
     app.use(express.static(path.join(applicationRoot, "dist")));
     app.use(bodyParser.urlencoded({
         extended: true
     }));
     app.use(bodyParser.json());
 
-    //Show all errors in development
-    app.use( express.errorHandler({ dumpExceptions: true, showStack: true }));
+    // Show all errors in development
+    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 
-    //perform route lookup based on url and HTTP method
-    app.use( app.router );
+    // Perform route lookup based on URL and HTTP method
+    app.use(app.router);
 });
 
 // Start server
@@ -35,7 +35,7 @@ app.listen( port, function() {
 
 // Routes
 app.get("/api", function(request, response) {
-    response.send("Library API is running");
+    response.send("WWC2015 Sticker Swap Inventory API is running");
 });
 
 // Connect to database
@@ -73,9 +73,9 @@ app.get("/api/needs", function(request, response) {
     });
 });
 
-//Get a single need sticker by ID (not the sticker ID atm)
+//Get a single need sticker
 app.get("/api/needs/:id", function(request, response) {
-    return NeedStickerModel.findById(request.params.id, function(error, need) {
+    return NeedStickerModel.findOne({ stickerId: request.params.id }, function(error, need) {
         if (!error) {
             return response.send(need);
         } else {
@@ -106,7 +106,7 @@ app.post("/api/needs", function(request, response) {
 // Update a need sticker
 app.put("/api/needs/:id", function(request, response) {
     console.log("Updating sticker " + request.body.id);
-    return NeedStickerModel.findById(request.params.id, function(error, need) {
+    return NeedStickerModel.findOne({ stickerId: request.params.id }, function(error, need) {
         need.stickerId = request.body.id;
         need.found = request.body.found;
         need.swapped = request.body.swapped;
@@ -126,7 +126,7 @@ app.put("/api/needs/:id", function(request, response) {
 // Delete a need sticker
 app.delete("/api/needs/:id", function(request, response) {
     console.log("Deleting sticker with ID: " + request.params.id);
-    return NeedStickerModel.findById(request.params.id, function(err, need) {
+    return NeedStickerModel.findOne({ stickerId: request.params.id }, function(err, need) {
         return need.remove(function(error) {
             if (!error) {
                 console.log("sticker removed");
@@ -149,9 +149,9 @@ app.get("/api/spares", function(request, response) {
     });
 });
 
-//Get a single spare sticker by ID
+//Get a single spare sticker
 app.get("/api/spares/:id", function(request, response) {
-    return SpareStickerModel.findById(request.params.id, function(error, spare) {
+    return SpareStickerModel.findOne({ stickerId: request.params.id }, function(error, spare) {
         if (!error) {
             return response.send(spare);
         } else {
@@ -182,7 +182,7 @@ app.post("/api/spares", function(request, response) {
 // Update a spare sticker
 app.put("/api/spares/:id", function(request, response) {
     console.log("Updating sticker " + request.body.id);
-    return SpareStickerModel.findById(request.params.id, function(error, spare) {
+    return SpareStickerModel.findOne({ stickerId: request.params.id }, function(error, spare) {
         spare.stickerId = request.body.id;
         spare.reserved = request.body.reserved;
         spare.swapped = request.body.swapped;
@@ -202,7 +202,7 @@ app.put("/api/spares/:id", function(request, response) {
 // Delete a spare sticker
 app.delete("/api/spares/:id", function(request, response) {
     console.log("Deleting sticker with ID: " + request.params.id);
-    return SpareStickerModel.findById(request.params.id, function(err, spare) {
+    return SpareStickerModel.findOne({ stickerId: request.params.id }, function(err, spare) {
         return spare.remove(function(error) {
             if (!error) {
                 console.log("sticker removed");
