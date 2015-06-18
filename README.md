@@ -9,4 +9,3 @@
  * UI to add need/spare sticker(s) - comma separated string of IDs
  * Style it up a bit
  * Tests
- * Mostly, everything still!
