@@ -38,10 +38,10 @@ app.get("/api", function(request, response) {
     response.send("Library API is running");
 });
 
-//Connect to database
+// Connect to database
 mongoose.connect("mongodb://localhost/library_database");
 
-//Schemas
+// Schemas
 var NeedSticker = new mongoose.Schema({
     // stickerId: { type: Number, min: 1, max: 478 },
     stickerId: Number,
@@ -73,7 +73,18 @@ app.get("/api/needs", function(request, response) {
     });
 });
 
-//Insert a new need sticker
+//Get a single need sticker by ID (not the sticker ID atm)
+app.get("/api/needs/:id", function(request, response) {
+    return NeedStickerModel.findById(request.params.id, function(error, need) {
+        if (!error) {
+            return response.send(need);
+        } else {
+            return console.log(error);
+        }
+    });
+});
+
+// Insert a new need sticker
 app.post("/api/needs", function(request, response) {
     var need = new NeedStickerModel({
         stickerId: request.body.id,
@@ -92,11 +103,42 @@ app.post("/api/needs", function(request, response) {
     });
 });
 
+// Update a need sticker
+app.put("/api/needs/:id", function(request, response) {
+    console.log("Updating sticker " + request.body.id);
+    return NeedStickerModel.findById(request.params.id, function(error, need) {
+        need.stickerId = request.body.id;
+        need.found = request.body.found;
+        need.swapped = request.body.swapped;
+        need.swappedWith = request.body.swappedWith;
+
+        return need.save( function(error) {
+            if(!error) {
+                console.log("sticker updated");
+                return response.send(need);
+            } else {
+                console.log(error);
+            }
+        });
+    });
+});
+
 //Get a list of all my spare stickers
 app.get("/api/spares", function(request, response) {
     return SpareStickerModel.find(function(error, spares) {
         if (!error) {
             return response.send(spares);
+        } else {
+            return console.log(error);
+        }
+    });
+});
+
+//Get a single spare sticker by ID
+app.get("/api/spares/:id", function(request, response) {
+    return SpareStickerModel.findById(request.params.id, function(error, spare) {
+        if (!error) {
+            return response.send(spare);
         } else {
             return console.log(error);
         }
@@ -119,5 +161,25 @@ app.post("/api/spares", function(request, response) {
         } else {
             console.log(error);
         }
+    });
+});
+
+// Update a spare sticker
+app.put("/api/spares/:id", function(request, response) {
+    console.log("Updating sticker " + request.body.id);
+    return SpareStickerModel.findById(request.params.id, function(error, spare) {
+        spare.stickerId = request.body.id;
+        spare.reserved = request.body.reserved;
+        spare.swapped = request.body.swapped;
+        spare.swappedWith = request.body.swappedWith;
+
+        return spare.save( function(error) {
+            if(!error) {
+                console.log("sticker updated");
+                return response.send(spare);
+            } else {
+                console.log(error);
+            }
+        });
     });
 });
