@@ -95,7 +95,7 @@ app.post("/api/needs", function(request, response) {
 
     return need.save(function(error) {
         if (!error) {
-            console.log("created");
+            console.log("sticker added");
             return response.send(need);
         } else {
             console.log(error);
@@ -113,9 +113,24 @@ app.put("/api/needs/:id", function(request, response) {
         need.swappedWith = request.body.swappedWith;
 
         return need.save( function(error) {
-            if(!error) {
+            if (!error) {
                 console.log("sticker updated");
                 return response.send(need);
+            } else {
+                console.log(error);
+            }
+        });
+    });
+});
+
+// Delete a need sticker
+app.delete("/api/needs/:id", function(request, response) {
+    console.log("Deleting sticker with ID: " + request.params.id);
+    return NeedStickerModel.findById(request.params.id, function(err, need) {
+        return need.remove(function(error) {
+            if (!error) {
+                console.log("sticker removed");
+                return response.send("");
             } else {
                 console.log(error);
             }
@@ -156,7 +171,7 @@ app.post("/api/spares", function(request, response) {
 
     return spare.save(function(error) {
         if (!error) {
-            console.log("created");
+            console.log("sticker added");
             return response.send(spare);
         } else {
             console.log(error);
@@ -177,6 +192,21 @@ app.put("/api/spares/:id", function(request, response) {
             if(!error) {
                 console.log("sticker updated");
                 return response.send(spare);
+            } else {
+                console.log(error);
+            }
+        });
+    });
+});
+
+// Delete a spare sticker
+app.delete("/api/spares/:id", function(request, response) {
+    console.log("Deleting sticker with ID: " + request.params.id);
+    return SpareStickerModel.findById(request.params.id, function(err, spare) {
+        return spare.remove(function(error) {
+            if (!error) {
+                console.log("sticker removed");
+                return response.send("");
             } else {
                 console.log(error);
             }
