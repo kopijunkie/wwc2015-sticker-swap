@@ -60,6 +60,17 @@ module.exports = function (grunt) {
                 tasks: ["test:true"]
             }
         },
+        nodemon: {
+            dev: {
+                script: "server.js"
+            }
+        },
+        concurrent: {
+            options: {
+                logConcurrentOutput: true
+            },
+            tasks: ["nodemon", "watch"]
+        },
         connect: {
             options: {
                 port: grunt.option("port") || SERVER_PORT,
@@ -109,7 +120,7 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            dist: [".tmp/**/*", "<%= yeoman.dist %>/*.*"],
+            dist: [".tmp/**/*", "<%= yeoman.dist %>/**/*.*"],
             server: ".tmp/**/*"
         },
         jshint: {
@@ -162,9 +173,20 @@ module.exports = function (grunt) {
         // not enabled since usemin task does concat and uglify
         // check index.html to edit your build targets
         // enable this task if you prefer defining your build targets here
-        /*uglify: {
-            dist: {}
-        },*/
+        // concat: {
+        //     options: {
+        //         sourceMap: true
+        //     }
+        // },
+        // uglify: {
+        //     options: {
+        //         sourceMap: true,
+        //         sourceMapIn: function(uglifySource) {
+        //           return uglifySource + ".map";
+        //         },
+        //         sourceMapIncludeSources: true
+        //     }
+        // },
         useminPrepare: {
             html: "<%= yeoman.app %>/index.html",
             options: {

@@ -7,22 +7,23 @@ StickerSwapInventory.Models = StickerSwapInventory.Models || {};
 
     StickerSwapInventory.Models.NeedStickerModel = Backbone.Model.extend({
 
-        initialize: function() {
-        },
-
         defaults: {
-            "found": false,
-            "swapped": false,
-            "swappedWith": ""
+            found: false,
+            swapped: false,
+            swappedWith: ""
         },
 
-        validate: function(attrs, options) {
-            console.log(attrs, options);
+        validate: function(attrs) {
+            console.log(attrs);
         },
 
-        parse: function(response, options)  {
-            console.log(response, options);
-            return response;
+        parse: function(response)  {
+            return {
+                id: response.stickerId,
+                found: response.found,
+                swapped: response.swapped,
+                swappedWith: response.swappedWith
+            };
         }
     });
 

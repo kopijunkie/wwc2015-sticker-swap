@@ -13,17 +13,23 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         events: {},
 
         initialize: function () {
+            this.collection = new StickerSwapInventory.Collections.NeedsCollection();
+            this.collection.fetch({reset: true});
+
             this.render();
+
+            this.listenTo(this.collection, "add", this.renderNeed);
+            this.listenTo(this.collection, "reset", this.render);
         },
 
         render: function () {
             this.$el.append(this.template());
             this.collection.each(function(sticker) {
-                this.renderStickerNeeded(sticker);
+                this.renderNeed(sticker);
             }, this);
         },
 
-        renderStickerNeeded: function(sticker) {
+        renderNeed: function(sticker) {
             var stickerNeededView = new StickerSwapInventory.Views.NeedView({
                 model: sticker
             });
