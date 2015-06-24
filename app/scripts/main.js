@@ -5,6 +5,7 @@ window.StickerSwapInventory = {
     Collections: {},
     Views: {},
     Routers: {},
+
     init: function () {
         "use strict";
 
@@ -18,5 +19,6 @@ window.StickerSwapInventory = {
 
 $(document).ready(function () {
     "use strict";
+
     StickerSwapInventory.init();
 });
