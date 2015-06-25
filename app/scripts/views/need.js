@@ -14,7 +14,8 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
             "click .found-swap.checkbox": "onFoundCheckboxClick",
             "click .found-swap.checkbox__label": "onFoundCheckboxLabelClick",
             "click .swapped.checkbox": "onSwappedCheckboxClick",
-            "click .swapped.checkbox__label": "onSwappedCheckboxLabelClick"
+            "click .swapped.checkbox__label": "onSwappedCheckboxLabelClick",
+            "click .submit": "submitSwappedWith"
         },
 
         initialize: function () {
@@ -27,16 +28,15 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         },
 
         onFoundCheckboxClick: function() {
-            var stickerId = this.model.id;
             var found = this.$el.find(".found-swap.checkbox").prop("checked");
 
             this.model.save("found", found, {
-                success: function() {
-                    alertify.success("Sticker #" + stickerId + " updated");
-                },
-                error: function() {
-                    alertify.error("Could not update Sticker #" + stickerId);
-                }
+                success: _.bind(function() {
+                    this.showSuccessAlert();
+                }, this),
+                error: _.bind(function() {
+                    this.showErrorAlert();
+                }, this)
             });
         },
 
@@ -46,37 +46,36 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
             if (this.$el.find(".found-swap.checkbox").prop("checked")) {
                 this.model.save("found", false, {
                     success: _.bind(function() {
-                        alertify.success("Sticker #" + this.model.id + " updated");
+                        this.showSuccessAlert();
                         this.$el.find(".found-swap.checkbox").prop("checked", false);
                     }, this),
                     error: _.bind(function() {
-                        alertify.error("Could not update Sticker #" + this.model.id);
+                        this.showErrorAlert();
                     }, this)
                 });
             } else {
                 this.model.save("found", true, {
                     success: _.bind(function() {
-                        alertify.success("Sticker #" + this.model.id + " updated");
+                        this.showSuccessAlert();
                         this.$el.find(".found-swap.checkbox").prop("checked", true);
                     }, this),
                     error: _.bind(function() {
-                        alertify.error("Could not update Sticker #" + this.model.id);
+                        this.showErrorAlert();
                     }, this)
                 });
             }
         },
 
         onSwappedCheckboxClick: function() {
-            var stickerId = this.model.id;
             var swapped = this.$el.find(".swapped.checkbox").prop("checked");
 
             this.model.save("swapped", swapped, {
-                success: function() {
-                    alertify.success("Sticker #" + stickerId + " updated");
-                },
-                error: function() {
-                    alertify.error("Could not update Sticker #" + stickerId);
-                }
+                success: _.bind(function() {
+                    this.showSuccessAlert();
+                }, this),
+                error: _.bind(function() {
+                    this.showErrorAlert();
+                }, this)
             });
         },
 
@@ -86,24 +85,45 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
             if (this.$el.find(".swapped.checkbox").prop("checked")) {
                 this.model.save("swapped", false, {
                     success: _.bind(function() {
-                        alertify.success("Sticker #" + this.model.id + " updated");
+                        this.showSuccessAlert();
                         this.$el.find(".swapped.checkbox").prop("checked", false);
                     }, this),
                     error: _.bind(function() {
-                        alertify.error("Could not update Sticker #" + this.model.id);
+                        this.showErrorAlert();
                     }, this)
                 });
             } else {
                 this.model.save("swapped", true, {
                     success: _.bind(function() {
-                        alertify.success("Sticker #" + this.model.id + " updated");
+                        this.showSuccessAlert();
                         this.$el.find(".swapped.checkbox").prop("checked", true);
                     }, this),
                     error: _.bind(function() {
-                        alertify.error("Could not update Sticker #" + this.model.id);
+                        this.showErrorAlert();
                     }, this)
                 });
             }
+        },
+
+        submitSwappedWith: function() {
+            var swappedWith = this.$el.find(".swapped-with__input").val();
+
+            this.model.save("swappedWith", swappedWith, {
+                success: _.bind(function() {
+                    this.showSuccessAlert();
+                }, this),
+                error: _.bind(function() {
+                    this.showErrorAlert();
+                }, this)
+            });
+        },
+
+        showSuccessAlert: function() {
+            alertify.success("Sticker #" + this.model.id + " updated");
+        },
+
+        showErrorAlert: function() {
+            alertify.error("Could not update Sticker #" + this.model.id);
         },
 
         close: function() {
