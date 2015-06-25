@@ -149,7 +149,7 @@ module.exports = function (grunt) {
         sass: {
             options: {
                 sourceMap: true,
-                includePaths: ["app/bower_components"]
+                includePaths: ["<%= yeoman.app %>/bower_components"]
             },
             dist: {
                 files: [{
@@ -252,7 +252,8 @@ module.exports = function (grunt) {
                         "*.{ico,txt}",
                         "images/{,*/}*.{webp,gif}",
                         "styles/fonts/{,*/}*.*",
-                        "bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*.*"
+                        "bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*.*",
+                        "bower_components/alertify-js/build/css/**/*.*"
                     ]
                 }, {
                     src: "node_modules/apache-server-configs/dist/.htaccess",

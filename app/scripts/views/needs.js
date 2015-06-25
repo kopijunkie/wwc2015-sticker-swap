@@ -10,7 +10,8 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         className: "stickers-needed",
 
         events: {
-
+            "click .clear": "clearText",
+            "click .submit": "submitStickerIds"
         },
 
         initialize: function () {
@@ -35,6 +36,15 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
                 model: sticker
             });
             this.$el.find("#needs-list").append(stickerNeededView.render().el);
+        },
+
+        clearText: function() {
+            this.$el.find("#add-stickers-needed").val("");
+        },
+
+        submitStickerIds: function() {
+            var stickerIds = this.$el.find("#add-stickers-needed").val();
+            console.log(stickerIds);
         }
 
     });

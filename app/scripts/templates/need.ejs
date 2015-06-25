@@ -1,11 +1,16 @@
 <h3 class="h5">Sticker ID # <%= data.id %></h3>
 <div class="checkbox__container">
-    <input type="checkbox" id="found-swap" class="checkbox checked-icon"
+    <input type="checkbox" name="found-swap" class="found-swap checkbox checked-icon"
         <%= data.found ? 'checked="checked"' : '' %> />
-    <label for="found-swap" class="checkbox__label">Found Swap</label>
+    <label for="found-swap" class="found-swap checkbox__label">Found Swap</label>
 </div>
 <div class="checkbox__container">
-    <input type="checkbox" id="swapped" class="checkbox checked-icon"
+    <input type="checkbox" name="swapped" class="swapped checkbox checked-icon"
         <%= data.swapped ? 'checked="checked"' : '' %> />
-    <label for="swapped" class="checkbox__label">Swapped</label>
+    <label for="swapped" class="swapped checkbox__label">Swapped</label>
+</div>
+<div class="text-input__container">
+    <label for="swapped-with">Swapped With</label>
+    <input type="text" name="swapped-with" class="swapped-with" placeholder="Name or @Username" />
+    <button type="submit" class="submit">OK</button>
 </div>

@@ -6,7 +6,8 @@
     "jquery": "~2.1.0",
     "lodash": "~2.4.1",
     "backbone": "~1.1.0",
-    "bootstrap-sass-official": "~3.3.5"
+    "bootstrap-sass-official": "~3.3.5",
+    "alertify-js": "~1.4.1"
   },
   "devDependencies": {}
 }

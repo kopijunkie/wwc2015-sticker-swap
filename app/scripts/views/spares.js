@@ -7,14 +7,13 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
 
     StickerSwapInventory.Views.SparesListView = Backbone.View.extend({
         template: JST["app/scripts/templates/spares.ejs"],
-        tagName: "section",
         className: "spare-stickers",
 
         events: {},
 
         initialize: function () {
             this.collection = new StickerSwapInventory.Collections.SparesCollection();
-            this.collection.fetch({reset: true});
+            this.collection.fetch();
 
             this.render();
 
