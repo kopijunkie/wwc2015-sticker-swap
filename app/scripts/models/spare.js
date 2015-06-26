@@ -17,8 +17,8 @@ StickerSwapInventory.Models = StickerSwapInventory.Models || {};
         },
 
         validate: function(attrs) {
-            if (attrs.swapped && !attrs.found) {
-                alertify.error("Sticker not marked as 'found' yet.");
+            if (attrs.swapped && !attrs.reserved) {
+                alertify.error("Sticker not marked as 'reserved' yet.");
             }
         },
 

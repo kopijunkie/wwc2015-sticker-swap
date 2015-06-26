@@ -17,7 +17,6 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         initialize: function () {
             this.collection = new StickerSwapInventory.Collections.NeedsCollection();
             this.collection.fetch();
-            this.collection.sort();
 
             this.render();
 
@@ -26,6 +25,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         },
 
         render: function () {
+            this.collection.sort();
             this.$el.append(this.template());
             this.collection.each(function(sticker) {
                 this.renderNeed(sticker);
@@ -48,24 +48,33 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
 
             var stickerIdsString = this.$el.find(".stickers__input").val();
             var stickerIds = stickerIdsString.split(",");
+            var errorsFound = 0;
 
             _.each(stickerIds, _.bind(function(stickerId) {
                 stickerId = stickerId.trim();
 
-                if (stickerId.length > 0) {
-                    this.collection.create({
-                        stickerId: stickerId
-                    }, {
-                        wait: true,
-                        success: function(model, response) {
-                            alertify.success("Sticker #" + stickerId + " added!");
-                        },
-                        error: function(model, error) {
-                            alertify.error("Sticker #" + stickerId + " not added!");
-                        }
-                    });
+                if (!$.isNumeric(stickerId)) {
+                    errorsFound++;
+                    alertify.error("Sticker ID '" + stickerId + "' is not a number");
+                    return;
                 }
+
+                this.collection.create({
+                    stickerId: stickerId
+                }, {
+                    wait: true,
+                    success: _.bind(function() {
+                        alertify.success("Sticker #" + stickerId + " added!");
+                    }, this),
+                    error: function() {
+                        alertify.error("Sticker #" + stickerId + " not added!");
+                    }
+                });
             }, this));
+
+            if (errorsFound === 0) {
+                this.clearText();
+            }
         }
 
     });
