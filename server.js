@@ -68,7 +68,7 @@ app.get("/api/needs", function(request, response) {
         if (!error) {
             return response.send(needs);
         } else {
-            return console.log(error);
+            console.log(error);
         }
     });
 });
@@ -79,16 +79,15 @@ app.get("/api/needs/:id", function(request, response) {
         if (!error) {
             return response.send(need);
         } else {
-            return console.log(error);
+            console.log(error);
         }
     });
 });
 
 // Insert a new need sticker
 app.post("/api/needs", function(request, response) {
-    console.log("Adding sticker: ", request);
     var need = new NeedStickerModel({
-        stickerId: request.body.id,
+        stickerId: request.body.stickerId,
         found: request.body.found || false,
         swapped: request.body.swapped || false,
         swappedWith: request.body.swappedWith || ""
@@ -145,7 +144,7 @@ app.get("/api/spares", function(request, response) {
         if (!error) {
             return response.send(spares);
         } else {
-            return console.log(error);
+            console.log(error);
         }
     });
 });
@@ -156,7 +155,7 @@ app.get("/api/spares/:id", function(request, response) {
         if (!error) {
             return response.send(spare);
         } else {
-            return console.log(error);
+            console.log(error);
         }
     });
 });
@@ -164,7 +163,7 @@ app.get("/api/spares/:id", function(request, response) {
 //Insert a new spare sticker
 app.post("/api/spares", function(request, response) {
     var spare = new SpareStickerModel({
-        stickerId: request.body.id,
+        stickerId: request.body.stickerId,
         reserved: request.body.reserved || false,
         swapped: request.body.swapped || false,
         swappedWith: request.body.swappedWith || ""
@@ -203,7 +202,7 @@ app.put("/api/spares/:id", function(request, response) {
 // Delete a spare sticker
 app.delete("/api/spares/:id", function(request, response) {
     console.log("Deleting sticker with ID: " + request.params.id);
-    return SpareStickerModel.findOne({ stickerId: request.params.id }, function(err, spare) {
+    return SpareStickerModel.findById(request.params.id, function(err, spare) {
         return spare.remove(function(error) {
             if (!error) {
                 console.log("sticker removed");

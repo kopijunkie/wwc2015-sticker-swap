@@ -8,7 +8,10 @@ StickerSwapInventory.Collections = StickerSwapInventory.Collections || {};
     StickerSwapInventory.Collections.NeedsCollection = Backbone.Collection.extend({
 
         url: "/api/needs",
-        model: StickerSwapInventory.Models.NeedStickerModel
+        model: StickerSwapInventory.Models.NeedStickerModel,
+        comparator: function(model) {
+            return model.get("id");
+        }
 
     });
 

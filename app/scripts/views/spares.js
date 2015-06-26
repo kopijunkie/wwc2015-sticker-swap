@@ -52,8 +52,16 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
                 stickerId = stickerId.trim();
 
                 if (stickerId.length > 0) {
-                    this.collection.add({
-                        id: stickerId
+                    this.collection.create({
+                        stickerId: stickerId
+                    }, {
+                        wait: true,
+                        success: function(model, response) {
+                            alertify.success("Sticker #" + stickerId + " added!");
+                        },
+                        error: function(model, error) {
+                            alertify.error("Sticker #" + stickerId + " not added!");
+                        }
                     });
                 }
             }, this));

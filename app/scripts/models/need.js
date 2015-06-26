@@ -14,7 +14,9 @@ StickerSwapInventory.Models = StickerSwapInventory.Models || {};
         },
 
         validate: function(attrs) {
-            console.log(attrs);
+            if (attrs.swapped && !attrs.found) {
+                alertify.error("Sticker not marked as 'found' yet.");
+            }
         },
 
         parse: function(response)  {

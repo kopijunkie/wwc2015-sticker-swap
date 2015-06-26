@@ -6,6 +6,8 @@
 
 ## TODO
  * Load in initial needs, spares lists (2 arrays of IDs)
- * UI to add need/spare sticker(s) - comma separated string of IDs
+ * Sort by sticker ID
+ * Validation(s)
  * Style it up a bit
  * Tests
+ * Filter search for needs, spares list
