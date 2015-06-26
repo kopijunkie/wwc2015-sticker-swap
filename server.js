@@ -86,6 +86,7 @@ app.get("/api/needs/:id", function(request, response) {
 
 // Insert a new need sticker
 app.post("/api/needs", function(request, response) {
+    console.log("Adding sticker: ", request);
     var need = new NeedStickerModel({
         stickerId: request.body.id,
         found: request.body.found || false,

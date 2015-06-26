@@ -52,16 +52,18 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
                 stickerId = stickerId.trim();
 
                 if (stickerId.length > 0) {
-                    var sticker = new StickerSwapInventory.Models.NeedStickerModel({
+                    console.log(this.collection.toJSON());
+                    this.collection.create({
                         id: stickerId
-                    });
-                    this.collection.create(sticker, {
+                    }, {
                         wait: true,
-                        success: function() {
-                            alertify.success("Sticker added!");
+                        success: function(model, response) {
+                            console.log(model.toJSON(), response);
+                            alertify.success("Sticker #" + model.id + " added!");
                         },
-                        error: function() {
-                            alertify.error("Sticker not added!");
+                        error: function(model, error) {
+                            console.log(model.toJSON(), error);
+                            alertify.error("Sticker #" + model.id + " not added!");
                         }
                     });
                 }
