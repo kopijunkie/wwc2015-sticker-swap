@@ -39,12 +39,34 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         },
 
         clearText: function() {
-            this.$el.find("#add-stickers-needed").val("");
+            this.$el.find(".stickers__input").val("");
         },
 
-        submitStickerIds: function() {
-            var stickerIds = this.$el.find("#add-stickers-needed").val();
-            console.log(stickerIds);
+        submitStickerIds: function(event) {
+            event.preventDefault();
+
+            var stickerIdsString = this.$el.find(".stickers__input").val();
+            var stickerIds = stickerIdsString.split(",");
+
+            _.each(stickerIds, _.bind(function(stickerId) {
+                stickerId = stickerId.trim();
+
+                if (stickerId.length > 0) {
+                    var sticker = new StickerSwapInventory.Models.NeedStickerModel({
+                        id: stickerId
+                    });
+                    this.collection.create(sticker, {
+                        wait: true,
+                        success: function() {
+                            alertify.success("Sticker added!");
+                        },
+                        error: function() {
+                            alertify.error("Sticker not added!");
+                        }
+                    });
+                }
+            }, this));
+            console.log(this.collection.toJSON());
         }
 
     });
