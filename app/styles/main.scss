@@ -17,7 +17,7 @@ body {
 }
 
 
-// Everything but the jumbotron gets side spacing for mobile first views
+// Everything gets side spacing for mobile first views
 .header,
 .marketing,
 .footer {
@@ -50,6 +50,13 @@ body {
 
 .checkbox {
     display: inline-block;
+}
+
+
+.add-stickers-needed,
+.add-spare-stickers,
+.hide-ui {
+    display: none;
 }
 
 

@@ -10,6 +10,8 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         className: "spare-stickers",
 
         events: {
+            "click .add": "showStickerIdsInput",
+            "click .hide-ui": "hideStickerIdsInput",
             "click .clear": "clearText",
             "click .submit": "submitStickerIds"
         },
@@ -37,6 +39,18 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
                 model: sticker
             });
             this.$el.find("#spares-list").append(stickerSpareView.render().el);
+        },
+
+        showStickerIdsInput: function() {
+            this.$el.find(".add-spare-stickers").slideDown();
+            this.$el.find(".add").hide();
+            this.$el.find(".hide-ui").show();
+        },
+
+        hideStickerIdsInput: function() {
+            this.$el.find(".add-spare-stickers").slideUp();
+            this.$el.find(".add").show();
+            this.$el.find(".hide-ui").hide();
         },
 
         clearText: function() {

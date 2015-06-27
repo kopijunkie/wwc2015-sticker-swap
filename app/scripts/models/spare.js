@@ -23,7 +23,9 @@ StickerSwapInventory.Models = StickerSwapInventory.Models || {};
         },
 
         parse: function(response)  {
+            console.log(response);
             return {
+                id: response._id,
                 stickerId: response.stickerId,
                 reserved: response.reserved,
                 swapped: response.swapped,

@@ -181,9 +181,10 @@ app.post("/api/spares", function(request, response) {
 
 // Update a spare sticker
 app.put("/api/spares/:id", function(request, response) {
+    console.log(request);
     console.log("Updating sticker " + request.body.id);
     return SpareStickerModel.findOne({ stickerId: request.params.id }, function(error, spare) {
-        spare.stickerId = request.body.id;
+        spare.stickerId = request.body.stickerId;
         spare.reserved = request.body.reserved;
         spare.swapped = request.body.swapped;
         spare.swappedWith = request.body.swappedWith;

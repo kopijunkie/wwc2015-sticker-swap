@@ -20,6 +20,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
 
         initialize: function () {
             this.listenTo(this.model, "change", this.render);
+            console.log(this.model.toJSON());
         },
 
         render: function () {
