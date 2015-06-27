@@ -89,6 +89,10 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
             if (errorsFound === 0) {
                 this.clearText();
             }
+        },
+
+        close: function() {
+            this.stopListening();
         }
 
     });

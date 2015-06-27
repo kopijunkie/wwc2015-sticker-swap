@@ -10,10 +10,11 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
 }
 
 
-// Space out content a bit
+// Space out content a bit & set background colour
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background: #4ea652;
 }
 
 
@@ -48,8 +49,24 @@ body {
 }
 
 
+.header__text {
+  color: #f9f9f9;
+}
+
+
 .checkbox {
     display: inline-block;
+}
+
+.checkbox__label {
+    font-weight: normal;
+}
+
+
+.btn .icon {
+    font-size: 2rem;
+    font-weight: bold;
+    top: 0;
 }
 
 
@@ -57,6 +74,30 @@ body {
 .add-spare-stickers,
 .hide-ui {
     display: none;
+}
+
+
+.stickers__list {
+    margin-top: 25px;
+}
+
+.stickers__list-item {
+    margin: 15px 0px;
+    border: 5px solid #fff;
+    background: #fff;
+}
+
+.sticker {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 15px 15px;
+    background: #c8d8e3;
+}
+
+
+.sticker__heading {
+    text-transform: uppercase;
+    color: #b60649;
 }
 
 

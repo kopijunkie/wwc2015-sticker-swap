@@ -8,7 +8,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
     StickerSwapInventory.Views.SpareStickerView = Backbone.View.extend({
         template: JST["app/scripts/templates/spare.ejs"],
         tagName: "li",
-        className: "spares__list-item",
+        className: "stickers__list-item spares__list-item",
 
         events: {
             "click .reserved-swap.checkbox": "onReservedCheckboxClick",
