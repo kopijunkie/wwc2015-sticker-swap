@@ -123,7 +123,7 @@ StickerSwapInventory.Views = StickerSwapInventory.Views || {};
         },
 
         showErrorAlert: function() {
-            alertify.error("Could not update Sticker #" + this.model.id);
+            alertify.error("Sticker #" + this.model.id + " not updated");
         },
 
         close: function() {
