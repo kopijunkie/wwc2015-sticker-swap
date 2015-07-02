@@ -1,0 +1,1333 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"onTagSelect",
+				"onTagSelectClick"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"parent",
+				"parentGroupLink"
+			],
+			[
+				"showInh",
+				"showInheritedTagsButton"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"groupAnd",
+				"groupAndUserPickerContainer"
+			],
+			[
+				"startM",
+				"startMonthsDropdown"
+			],
+			[
+				"ui",
+				"ui-button"
+			],
+			[
+				"saved",
+				"saved-reports__list"
+			],
+			[
+				"newReport",
+				"newReportParams"
+			],
+			[
+				"slice",
+				"sliceAndDiceView"
+			],
+			[
+				"save-",
+				"save-to-file"
+			],
+			[
+				"down",
+				"downloadLink"
+			],
+			[
+				"datepicker",
+				"dateRangePicker"
+			],
+			[
+				"startDate",
+				"startDatePicker"
+			],
+			[
+				"dropzon",
+				"dropzoneOptions"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"yA",
+				"yAxisColor"
+			],
+			[
+				"infot",
+				"info-table__column"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"next",
+				"nextUser"
+			],
+			[
+				"border",
+				"border-collapse"
+			],
+			[
+				"new",
+				"new-user-li"
+			],
+			[
+				"pivot",
+				"pivotTable"
+			],
+			[
+				"nav",
+				"nav-region"
+			],
+			[
+				"sub",
+				"subnav"
+			],
+			[
+				"preview",
+				"previewTemplate"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"dark",
+				"dark-button"
+			],
+			[
+				"groupHierar",
+				"groupHierarchyTree"
+			],
+			[
+				"backgroun",
+				"background"
+			],
+			[
+				"hierar",
+				"group-hierarchy-tree"
+			],
+			[
+				"js",
+				"jstree-anchor"
+			],
+			[
+				"colum",
+				"columHeading"
+			],
+			[
+				"groupDro",
+				"groupDropdownRegion"
+			],
+			[
+				"group-",
+				"group-dropdown-region"
+			],
+			[
+				"currentGroup",
+				"currentGroupId"
+			],
+			[
+				"reportC",
+				"reportConfig"
+			],
+			[
+				"kpiId",
+				"kpiIds"
+			],
+			[
+				"wid",
+				"widgetOptions"
+			],
+			[
+				"main",
+				"mainWidth"
+			],
+			[
+				"generate",
+				"generateReportButton"
+			],
+			[
+				"report",
+				"report-button-controls"
+			],
+			[
+				"parsedD",
+				"parsedDataRows"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"default",
+				"defaultConfig"
+			],
+			[
+				"Saved",
+				"SavedReportsMenu"
+			],
+			[
+				"Cube",
+				"CubeViewClass"
+			],
+			[
+				"ranked",
+				"rankedKpiValues"
+			],
+			[
+				"save-report",
+				"save-report-button"
+			],
+			[
+				"save",
+				"saveReportAs"
+			],
+			[
+				"server",
+				"serverDateTime"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"menu",
+				"menu-dropdown"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"group-and",
+				"group-and-user-search"
+			],
+			[
+				"group",
+				"group-and-user-picker"
+			],
+			[
+				"timeframe",
+				"timeframe-picker"
+			],
+			[
+				"groupA",
+				"groupAndUserlist"
+			],
+			[
+				"confir",
+				"confirmSubmitDialog"
+			],
+			[
+				"target",
+				"targetableKpis"
+			],
+			[
+				"summary",
+				"summaryViewOptions"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"search",
+				"searchInput"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"viewHie",
+				"viewHierarchyButton"
+			],
+			[
+				"jstr",
+				"jstree-icon"
+			],
+			[
+				"goTo",
+				"goToGroupOneView"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"totals",
+				"totalsToggle"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"gene",
+				"generateReportButton"
+			],
+			[
+				"padding-",
+				"padding-right"
+			],
+			[
+				"user",
+				"userConfig"
+			],
+			[
+				"reporting",
+				"reportingServiceRegion"
+			],
+			[
+				"targetC",
+				"targetClassName"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"rep",
+				"reporting-app"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"piv",
+				"pivot-table"
+			],
+			[
+				"input",
+				"input-search"
+			],
+			[
+				"drop",
+				"dropdown-list"
+			],
+			[
+				"overf",
+				"overflow-x"
+			],
+			[
+				"parsed",
+				"parsedDataRows"
+			],
+			[
+				"overflow",
+				"overflow-y"
+			],
+			[
+				"child",
+				"childGroup"
+			],
+			[
+				"groupTree",
+				"groupTreeString"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"pivotTa",
+				"pivotTable"
+			],
+			[
+				"prio",
+				"priorityKpisArray"
+			],
+			[
+				"pv",
+				"pvtVals"
+			],
+			[
+				"table",
+				"tableAreaHeight"
+			],
+			[
+				"on",
+				"onClose"
+			],
+			[
+				"auth",
+				"authKey"
+			],
+			[
+				"audit",
+				"auditInfo"
+			],
+			[
+				"audi",
+				"auditInfo"
+			],
+			[
+				"deal",
+				"dealflashPageModel"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"ipad",
+				"ipad-message"
+			],
+			[
+				"reload",
+				"reloadPage"
+			],
+			[
+				"leaderboard",
+				"leaderboardTableBody"
+			],
+			[
+				"visi",
+				"visibleState"
+			],
+			[
+				"invalid",
+				"invalidIpAddresses"
+			],
+			[
+				"invalidI",
+				"invalidIpAddresses"
+			],
+			[
+				"click",
+				"clickThroughPermission"
+			],
+			[
+				"dataV",
+				"dataVisibility"
+			],
+			[
+				"data",
+				"dataVisibility"
+			],
+			[
+				"dataVisib",
+				"dataVisibilityTypes"
+			],
+			[
+				"rankedKpi",
+				"rankedKpiId"
+			],
+			[
+				"kpi",
+				"kpiValue"
+			],
+			[
+				"percent",
+				"percentageToExpectedTarget"
+			],
+			[
+				"gauge",
+				"gaugeValue"
+			],
+			[
+				"total",
+				"totalValue"
+			],
+			[
+				"righ",
+				"rightcol"
+			],
+			[
+				"left",
+				"leftcol"
+			],
+			[
+				"year",
+				"yearStart"
+			],
+			[
+				"finan",
+				"financialYearEnd"
+			],
+			[
+				"startMonth",
+				"startMonthValue"
+			],
+			[
+				"calendar",
+				"calendarTypeRadio"
+			],
+			[
+				"cube",
+				"cubeConfigs"
+			],
+			[
+				"ratios",
+				"ratiosCollection"
+			],
+			[
+				"word",
+				"word-wrap"
+			],
+			[
+				"first",
+				"firstKpiValue"
+			],
+			[
+				"filter",
+				"filterOptions"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1559,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 6498,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/views/needs.js",
+			"settings":
+			{
+				"buffer_size": 2504,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/collections/needs.js",
+			"settings":
+			{
+				"buffer_size": 341,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"gutter",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			],
+			[
+				"sublim",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 456.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/dev/wwc2015-sticker-swap",
+		"/C/dev/wwc2015-sticker-swap/app",
+		"/C/dev/wwc2015-sticker-swap/app/scripts",
+		"/C/dev/wwc2015-sticker-swap/app/scripts/collections",
+		"/C/dev/wwc2015-sticker-swap/app/scripts/views"
+	],
+	"file_history":
+	[
+		"/C/dev/Pinnacle/UILayer/src/js/admin/calendar/CalendarMgmt.js",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/user-header.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/groups/group-hierarchy-mgmt.html",
+		"/C/dev/Pinnacle/UILayer/src/scss/pages/_main-page.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/foundation/_variables.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/groups/_admin-groups-hierarchy-mgmt.scss",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/assign-tags-layout.html",
+		"/C/dev/Pinnacle/UILayer/src/scss/foundation/_custom_variables.scss",
+		"/C/dev/Pinnacle/UILayer/.scss-lint.yml",
+		"/C/dev/Pinnacle/UILayer/src/scss/_general.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/foundation/_custom_mixins.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/reporting-app/_reporting-service.scss",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/Header.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/targets/recalculate-group-target.html",
+		"/C/dev/Pinnacle/UILayer/src/scss/_foundation-overrides.scss",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/groups/UserGroupHistoryMgmt.js",
+		"/C/dev/Pinnacle/UILayer/src/js/common/services/Users.js",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/breadcrumbs.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/header.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/inherited-tags-table.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/inherited-tags-view.js",
+		"/C/dev/Pinnacle/UILayer/package.json",
+		"/C/dev/Pinnacle/UILayer/src/js/common/services/Group.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/app.js",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/_admin-user-mgmt.scss",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/users/user-mgmt-row.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/users/UsersMgmt.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/users/new-user-mgmt-row.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/users/user-mgmt.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/inherited-tag.html",
+		"/C/dev/Pinnacle/UILayer/src/scss/pages/_admin-page.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/_nav-menu.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/app.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/actuals/_main.scss",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/app.js",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/company-header.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/groups/user-group-history-table.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/groups/user-group-history-mgmt.html",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/menu-bar/menu-bar.view.js",
+		"/C/dev/Pinnacle/UILayer/src/js/cube19.app.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/app.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/category-mgmt-view.js",
+		"/C/dev/Pinnacle/UILayer/src/index.html",
+		"/C/dev/Pinnacle/UILayer/src/js/common/ratio-repo.js",
+		"/C/dev/Pinnacle/UILayer/src/js/main.js",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/kpi-details-table.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/tag-mgmt-view.js",
+		"/C/dev/Pinnacle/UILayer/src/js/reporting/reporting-widgets.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/assign-tags-view.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/edit-tag-layout.html",
+		"/C/dev/Pinnacle/UILayer/src/js/common/tag-repo.js",
+		"/C/dev/Pinnacle/UILayer/src/js/common/retryable.js",
+		"/C/dev/Pinnacle/UILayer/src/scss/_charts.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_breadcrumbs.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_alertify.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_active-users-list.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_dropzone.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_timeframe-picker.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_group-and-user-picker.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_kpi-ratios.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_jstree.scss",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/category-mgmt-layout.html",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_menu-bar.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/components/_modals.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/tags/_tag-assignments.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/_editable-table.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/tags/_main.scss",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/tags/_inherited-tags.scss",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/group-and-user-picker/GroupAndUserPicker.js",
+		"/C/dev/Pinnacle/UILayer/src/js/reporting/app.js",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/simple-table/layout.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/targets/CurrentTargets.js",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/tag-picker/view.js",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/KpiDetailsTable.js",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/tag-picker/layout.html",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/tag-category-picker/view.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/no-tags.html",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/simple-table/view.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/no-inherited-tags.html",
+		"/C/dev/Pinnacle/UILayer/src/js/error-page/layout.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/breadcrumbs.html",
+		"/C/dev/Pinnacle/UILayer/src/js/common/utils/DateTimeUtils.js",
+		"/C/dev/Pinnacle/UILayer/src/js/common/kpi-repo.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/tag-assignment.html",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/group-and-user-picker/layout.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/tag-assignments-table.html",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/cubes/JMI.js",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/cubes/jmi.html",
+		"/C/dev/Pinnacle/UILayer/src/js/common/services/Calendar.js",
+		"/C/Users/Kimmi/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/dev/Pinnacle/UILayer/src/js/reporting/ReportingWidgets.js",
+		"/C/dev/Pinnacle/UILayer/src/js/reporting/SaveReport.js",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/group-picker/GroupDropdownList.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/groups/GroupHierarchyMgmt.js",
+		"/C/dev/Pinnacle/UILayer/src/js/common/views/Breadcrumbs.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/breadcrumbs.js",
+		"/C/dev/Pinnacle/UILayer/src/js/oneview/Breadcrumbs.js",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/tags/_group-tags.scss",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/app.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/tags-mgmt-layout.html",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/layout.html",
+		"/C/dev/Pinnacle/UILayer/src/js/common/services/Tags.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/group-tags-mgmt-layout.html",
+		"/C/dev/Pinnacle/UILayer/.jscsrc",
+		"/C/dev/Pinnacle/UILayer/.jshintrc",
+		"/C/Users/Kimmi/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/calendar/calendar-mgmt.html",
+		"/C/dev/Pinnacle/UILayer/src/scss/admin/_admin-target-mgmt.scss",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/targets/kpi-target-row.html",
+		"/C/Users/Kimmi/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/actuals/app.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/groups/UserGroupsMgmt.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/ip/IpMgmt.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/ratios/RatiosMgmt.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/tags/group-tags-mgmt-view.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/targets/RecalculateGroupTarget.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/targets/RecalculateTargetStatus.js",
+		"/C/dev/Pinnacle/UILayer/src/js/admin/targets/TargetsMgmt.js",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/app.js",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/cubes/Leaderboard.js",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/cubes/CompanyOverview.js",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/cubes/DealFlash.js",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/cubes/MiniCube.js",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/cubes/MiniCubeContainer.js",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/cubes/TopPerformers.js",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/cubes/Trend.js",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/cubes/trend-chart-cube.html",
+		"/C/dev/Pinnacle/UILayer/src/js/bigscreens/cubes/models/Trend.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\img",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\libs",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"jsscss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\template",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\libs\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\libs\\pivot",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\scss",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\js",
+			"C:\\dev\\Pinnacle\\UILayer\\src\\templates"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"this.ipAddresses",
+			"showInheritedTags",
+			"60",
+			"active-users",
+			"emCalc",
+			"#959595",
+			"#555",
+			"#000",
+			"$black",
+			"$white",
+			"white",
+			"$text-input-color",
+			"body-input",
+			"$text-input-color",
+			"red",
+			"$red-darker",
+			"$red-dark",
+			"$red-lighter",
+			"$red-light",
+			"$red-bright",
+			"$red",
+			"exit-fullscreen-mode",
+			"confirm-dialog",
+			"white",
+			"emCalc",
+			"white",
+			"default-inset-sharp-text-shadow-color",
+			"$text-input-bg-color",
+			"inline",
+			"emCalc",
+			"dummyInheritedTagsHistory",
+			"dummyGroupTagsHistory",
+			"HI",
+			"addNewRow",
+			"dummyUserTagsHistory",
+			"userId",
+			"dummyTagsHistory",
+			"this.selectedUser.id",
+			"this.",
+			"TagHistory",
+			"addNewRow",
+			"assignments",
+			"showButtons",
+			"this.datepickerFormat",
+			"selected",
+			"TagAssignments",
+			"tagAssignments",
+			"processing",
+			"process",
+			"proc",
+			"hoverIntent",
+			"showUserVisibilityHelpTooltip",
+			"tip",
+			"tool",
+			"inheritedTags",
+			"#111",
+			"display: inline-block;",
+			"#F9EC33",
+			"#333",
+			"#5E5E",
+			"emCalc",
+			"5E5E5E",
+			"modal-header",
+			"area-header",
+			"dropdown-admin",
+			"white",
+			"emCalc",
+			"Work in progress:<br/>Back end service needed for front end to CRUD data.",
+			"userId",
+			"UserGroupHistory",
+			"goto",
+			"updateDataBtn",
+			"admin:loaded",
+			"App.execute(\"audit",
+			"App.ex",
+			"showErrorMessage",
+			"showSuccessMessage",
+			"\"delete-last-assignment\"",
+			"updateData",
+			"d",
+			"updateData",
+			"validateNameAndCategory",
+			"defaults",
+			"place",
+			"emCalc",
+			"background-opacity",
+			"emCalc",
+			"onGroupSelect",
+			"groupId",
+			"userHasPermissionToView",
+			"SELF",
+			"kpiRepo",
+			"tagAssignmentsTable",
+			"showInheritedTags",
+			"onTagSelectClick",
+			"addNewRowButton",
+			"isEditable",
+			"editab",
+			"this.isEditable",
+			"options.isEditable",
+			"div",
+			"span",
+			"\"hierarchy:breadcrumbs-str\"",
+			"());",
+			"userId",
+			"groupId",
+			"Group",
+			"group-tags",
+			"TagAssignments",
+			"filteredTagsHistory",
+			"tagAssignmentsTable",
+			"#111",
+			"renameHeaderTextIfTooLong",
+			"\"window:resize\"",
+			"ajax.get",
+			"***)</",
+			"dropdownVisible",
+			"toggleGroupAndUserPicker",
+			"showGroupAndUserPicker",
+			"groupAndUserList",
+			"\"reporting-widgets:update-user-group-text\"",
+			"reporting-widgets:update-user-group-text",
+			"this.dropdownVisible",
+			"slide",
+			"showGroupAndUserPicker",
+			"slide",
+			"onUserSelected",
+			"parentElement"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"},\n",
+			"icon-info",
+			"DateTimeUtils",
+			"\"ajax:get-file\"",
+			"getUserPermission",
+			"$aquamarine",
+			"$black",
+			"$white",
+			".timeframe-picker",
+			"Marionette.Layout",
+			"€",
+			"£",
+			"changes",
+			"$dark-grey",
+			"TimeFrames",
+			"n.",
+			"task",
+			"'20131231'",
+			"DS107",
+			"Keep In Touch Calls",
+			"DS107",
+			"null,0.0000",
+			"'Candidate Sales Calls'",
+			"@DonalCarolan",
+			"incentive"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Cobalt (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2400,
+								2400
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Cobalt (SL).tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/views/needs.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2305,
+								2305
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Cobalt (SL).tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/scripts/collections/needs.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								324,
+								324
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Cobalt (SL).tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "wwc2015-sticker-swap.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/C/dev/Pinnacle/Pinnacle.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
