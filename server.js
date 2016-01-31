@@ -1,11 +1,11 @@
 "use strict";
 
 // Module dependencies
-var applicationRoot = __dirname,
-    express = require("express"),           // Web framework - HTTP server (JS equivalent to Apache)
-    bodyParser = require("body-parser"),    // Parser for reading request body
-    path = require("path"),                 // Utilities for dealing with file paths
-    mongoose = require("mongoose");         // MongoDB integration
+var applicationRoot = __dirname;
+var express = require("express");           // Web framework - HTTP server (JS equivalent to Apache)
+var bodyParser = require("body-parser");    // Parser for reading request body
+var path = require("path");                 // Utilities for dealing with file paths
+var mongoose = require("mongoose");         // MongoDB integration
 
 // Create server
 var app = express();
