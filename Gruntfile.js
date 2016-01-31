@@ -205,7 +205,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: "<%= yeoman.app %>/images",
-                    src: "{,*/}*.{png,jpg,jpeg}",
+                    src: "[*/*.{png,jpg,jpeg,gif,svg}]",
                     dest: "<%= yeoman.dist %>/images"
                 }]
             }
@@ -245,12 +245,11 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    dot: true,
                     cwd: "<%= yeoman.app %>",
                     dest: "<%= yeoman.dist %>",
                     src: [
                         "*.{ico,txt}",
-                        "images/{,*/}*.{webp,gif}",
+                        "images/**/*",
                         "styles/fonts/{,*/}*.*",
                         "bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*.*",
                         "bower_components/alertify-js/build/css/**/*.*"
@@ -279,7 +278,6 @@ module.exports = function (grunt) {
                     src: [
                         "<%= yeoman.dist %>/scripts/{,*/}*.js",
                         "<%= yeoman.dist %>/styles/{,*/}*.css",
-                        "<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}",
                         "/styles/fonts/{,*/}*.*",
                         "bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*.*"
                     ]
@@ -297,28 +295,9 @@ module.exports = function (grunt) {
         grunt.task.run(["serve" + (target ? ":" + target : "")]);
     });
 
-    grunt.registerTask("serve", function (target) {
-        if (target === "dist") {
-            return grunt.task.run(["build", "open:server", "connect:dist:keepalive"]);
-        }
-
-        if (target === "test") {
-            return grunt.task.run([
-                "clean:server",
-                "createDefaultTemplate",
-                "jst",
-                "sass:server",
-                "connect:test",
-                "open:test",
-                "watch"
-            ]);
-        }
-
+    grunt.registerTask("serve", function () {
         grunt.task.run([
-            "clean:server",
-            "createDefaultTemplate",
-            "jst",
-            "sass:server",
+            "build",
             "connect:livereload",
             "open:server",
             "watch"
@@ -333,7 +312,7 @@ module.exports = function (grunt) {
                 "jst",
                 "sass",
                 "connect:test",
-                "mocha",
+                "mocha"
             ];
 
         if(!isConnected) {
@@ -363,7 +342,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask("default", [
         "jshint",
-        "test",
+        // "test",
         "build"
     ]);
 };

@@ -5,7 +5,7 @@
     "name": "KopiJunkie"
   },
   "homepage": "http://kopijunkie.net",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/kopijunkie/wwc2015-sticker-swap"
@@ -36,19 +36,19 @@
     "grunt-nodemon": "^0.4.0",
     "grunt-open": "^0.2.3",
     "grunt-rev": "^0.1.0",
-    "grunt-sass": "^0.17.0",
+    "grunt-sass": "^1.1.0",
     "grunt-usemin": "^2.4.0",
     "jshint-stylish": "^1.0.0",
     "load-grunt-tasks": "^0.6.0",
     "time-grunt": "^1.0.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0.0"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/kopijunkie/kopijunkienet/blob/master/LICENSE-MIT"
+      "url": "https://github.com/kopijunkie/wwc2015-sticker-swap/blob/master/LICENSE-MIT"
     }
   ],
   "keywords": [
