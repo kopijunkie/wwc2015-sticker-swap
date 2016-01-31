@@ -27,7 +27,8 @@ app.configure( function() {
 });
 
 // Start server
-var port = 4711;
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 4711;
 
 app.listen(port, function() {
     console.log("Express server listening on port %d in %s mode", port, app.settings.env);
