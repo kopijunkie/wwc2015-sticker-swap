@@ -29,14 +29,8 @@ app.configure( function() {
 // Start server
 // process.env.PORT lets the port be set by Heroku
 var port = process.env.PORT || 4711;
-
 app.listen(port, function() {
     console.log("Express server listening on port %d in %s mode", port, app.settings.env);
-});
-
-// Routes
-app.get("/api", function(request, response) {
-    response.send("WWC2015 Sticker Swap Inventory API is running");
 });
 
 // Connect to database
@@ -45,6 +39,11 @@ if (app.settings.env === "development") {
 } else {
     mongoose.connect("mongodb://kopijunkie:2015panini@ds055515.mongolab.com:55515/heroku_flr2shg6");
 }
+
+// Routes
+app.get("/api", function(request, response) {
+    response.send("WWC2015 Sticker Swap Inventory API is running");
+});
 
 // Schemas
 var NeedStickerSchema = new mongoose.Schema({
