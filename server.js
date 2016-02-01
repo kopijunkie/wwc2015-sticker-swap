@@ -40,7 +40,11 @@ app.get("/api", function(request, response) {
 });
 
 // Connect to database
-mongoose.connect("mongodb://localhost/library_database");
+if (app.settings.env === "development") {
+    mongoose.connect("mongodb://localhost/library_database");
+} else {
+    mongoose.connect("mongodb://kopijunkie:2015panini@ds063630.mongolab.com:63630/panini-sticker-swap");
+}
 
 // Schemas
 var NeedStickerSchema = new mongoose.Schema({
