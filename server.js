@@ -40,11 +40,11 @@ app.get("/api", function(request, response) {
 });
 
 // Connect to database
-if (app.settings.env === "development") {
-    mongoose.connect("mongodb://localhost/library_database");
-} else {
-    mongoose.connect("mongodb://kopijunkie:2015panini@@ds055515.mongolab.com:55515/heroku_flr2shg6");
-}
+// if (app.settings.env === "development") {
+//     mongoose.connect("mongodb://localhost/library_database");
+// } else {
+mongoose.connect("mongodb://kopijunkie:2015panini@@ds055515.mongolab.com:55515/heroku_flr2shg6");
+// }
 
 // Schemas
 var NeedStickerSchema = new mongoose.Schema({
