@@ -35,7 +35,7 @@ app.listen(port, function() {
 
 // Connect to database
 if (app.settings.env === "development") {
-    mongoose.connect("mongodb://localhost/library_database");
+    mongoose.connect("mongodb://localhost/wwc2015_stickers_database");
 } else {
     mongoose.connect("mongodb://kopijunkie:2015panini@ds055515.mongolab.com:55515/heroku_flr2shg6");
 }
@@ -47,7 +47,8 @@ app.get("/api", function(request, response) {
 
 // Schemas
 var NeedStickerSchema = new mongoose.Schema({
-    // stickerId: { type: Number, min: 1, max: 478 },
+    // TODO: Need Sticker should have a limit of 1 sticker ID (unique key)
+    // stickerId: { type: Number, min: 1, max: 478 },   TODO/FIXME
     stickerId: Number,
     found: Boolean,
     swapped: Boolean,
@@ -55,7 +56,7 @@ var NeedStickerSchema = new mongoose.Schema({
 });
 
 var SpareStickerSchema = new mongoose.Schema({
-    // stickerId: { type: Number, min: 1, max: 478 },
+    // stickerId: { type: Number, min: 1, max: 478 },   TODO/FIXME
     stickerId: Number,
     reserved: Boolean,
     swapped: Boolean,

@@ -10,7 +10,7 @@ StickerSwapInventory.Collections = StickerSwapInventory.Collections || {};
         url: "/api/needs",
         model: StickerSwapInventory.Models.NeedStickerModel,
         comparator: function(model) {
-            return model.get("id");
+            return model.get("id"); // TODO: sort by Sticker ID
         }
 
     });
